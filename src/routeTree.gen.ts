@@ -9,77 +9,98 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ResultadosRouteImport } from './routes/resultados'
-import { Route as ReservarRecubrimientoCeramicoRouteImport } from './routes/reservar-recubrimiento-ceramico'
-import { Route as ReservarPolarizadoRouteImport } from './routes/reservar-polarizado'
-import { Route as ReservarConAngelRouteImport } from './routes/reservar-con-angel'
-import { Route as ResenasRouteImport } from './routes/resenas'
-import { Route as ProcesoLimpiezaInteriorRouteImport } from './routes/proceso-limpieza-interior'
-import { Route as PrivacidadRouteImport } from './routes/privacidad'
-import { Route as OptInRouteImport } from './routes/opt-in'
-import { Route as NosotrosRouteImport } from './routes/nosotros'
-import { Route as MetodosYProcesoDeDetalladoRouteImport } from './routes/metodos-y-proceso-de-detallado'
-import { Route as McpRouteImport } from './routes/mcp'
-import { Route as LimpiezaProfundaToyotaCorollaRouteImport } from './routes/limpieza-profunda-toyota-corolla'
-import { Route as LimpiezaProfundaHondaCivicRouteImport } from './routes/limpieza-profunda-honda-civic'
-import { Route as HerramientasYProductosRouteImport } from './routes/herramientas-y-productos'
-import { Route as GraciasGlanzRouteImport } from './routes/gracias-glanz'
-import { Route as GraciasRouteImport } from './routes/gracias'
-import { Route as FaqLimpiezaMotorRouteImport } from './routes/faq-limpieza-motor'
-import { Route as FaqLimpiezaInteriorRouteImport } from './routes/faq-limpieza-interior'
-import { Route as ContactoRouteImport } from './routes/contacto'
-import { Route as CancelacionRouteImport } from './routes/cancelacion'
-import { Route as AreasDeServicioRouteImport } from './routes/areas-de-servicio'
-import { Route as SlugRouteImport } from './routes/$slug'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as SlugRouteImport } from './routes/$slug'
+import { Route as AreasDeServicioRouteImport } from './routes/areas-de-servicio'
+import { Route as CancelacionRouteImport } from './routes/cancelacion'
+import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as FaqLimpiezaInteriorRouteImport } from './routes/faq-limpieza-interior'
+import { Route as FaqLimpiezaMotorRouteImport } from './routes/faq-limpieza-motor'
+import { Route as GraciasRouteImport } from './routes/gracias'
+import { Route as GraciasGlanzRouteImport } from './routes/gracias-glanz'
+import { Route as HerramientasYProductosRouteImport } from './routes/herramientas-y-productos'
+import { Route as LimpiezaProfundaHondaCivicRouteImport } from './routes/limpieza-profunda-honda-civic'
+import { Route as LimpiezaProfundaToyotaCorollaRouteImport } from './routes/limpieza-profunda-toyota-corolla'
+import { Route as McpRouteImport } from './routes/mcp'
+import { Route as MetodosYProcesoDeDetalladoRouteImport } from './routes/metodos-y-proceso-de-detallado'
+import { Route as NosotrosRouteImport } from './routes/nosotros'
+import { Route as OptInRouteImport } from './routes/opt-in'
+import { Route as PrivacidadRouteImport } from './routes/privacidad'
+import { Route as ProcesoLimpiezaInteriorRouteImport } from './routes/proceso-limpieza-interior'
+import { Route as ResenasRouteImport } from './routes/resenas'
+import { Route as ReservarConAngelRouteImport } from './routes/reservar-con-angel'
+import { Route as ReservarPolarizadoRouteImport } from './routes/reservar-polarizado'
+import { Route as ReservarRecubrimientoCeramicoRouteImport } from './routes/reservar-recubrimiento-ceramico'
+import { Route as ResultadosRouteImport } from './routes/resultados'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
-const ResultadosRoute = ResultadosRouteImport.update({
-  id: '/resultados',
-  path: '/resultados',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ReservarRecubrimientoCeramicoRoute =
-  ReservarRecubrimientoCeramicoRouteImport.update({
-    id: '/reservar-recubrimiento-ceramico',
-    path: '/reservar-recubrimiento-ceramico',
+const SlugRoute = SlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AreasDeServicioRoute = AreasDeServicioRouteImport.update({
+  id: '/areas-de-servicio',
+  path: '/areas-de-servicio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CancelacionRoute = CancelacionRouteImport.update({
+  id: '/cancelacion',
+  path: '/cancelacion',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqLimpiezaInteriorRoute = FaqLimpiezaInteriorRouteImport.update({
+  id: '/faq-limpieza-interior',
+  path: '/faq-limpieza-interior',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqLimpiezaMotorRoute = FaqLimpiezaMotorRouteImport.update({
+  id: '/faq-limpieza-motor',
+  path: '/faq-limpieza-motor',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GraciasRoute = GraciasRouteImport.update({
+  id: '/gracias',
+  path: '/gracias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GraciasGlanzRoute = GraciasGlanzRouteImport.update({
+  id: '/gracias-glanz',
+  path: '/gracias-glanz',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HerramientasYProductosRoute = HerramientasYProductosRouteImport.update({
+  id: '/herramientas-y-productos',
+  path: '/herramientas-y-productos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LimpiezaProfundaHondaCivicRoute =
+  LimpiezaProfundaHondaCivicRouteImport.update({
+    id: '/limpieza-profunda-honda-civic',
+    path: '/limpieza-profunda-honda-civic',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ReservarPolarizadoRoute = ReservarPolarizadoRouteImport.update({
-  id: '/reservar-polarizado',
-  path: '/reservar-polarizado',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ReservarConAngelRoute = ReservarConAngelRouteImport.update({
-  id: '/reservar-con-angel',
-  path: '/reservar-con-angel',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResenasRoute = ResenasRouteImport.update({
-  id: '/resenas',
-  path: '/resenas',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProcesoLimpiezaInteriorRoute = ProcesoLimpiezaInteriorRouteImport.update({
-  id: '/proceso-limpieza-interior',
-  path: '/proceso-limpieza-interior',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacidadRoute = PrivacidadRouteImport.update({
-  id: '/privacidad',
-  path: '/privacidad',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OptInRoute = OptInRouteImport.update({
-  id: '/opt-in',
-  path: '/opt-in',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NosotrosRoute = NosotrosRouteImport.update({
-  id: '/nosotros',
-  path: '/nosotros',
+const LimpiezaProfundaToyotaCorollaRoute =
+  LimpiezaProfundaToyotaCorollaRouteImport.update({
+    id: '/limpieza-profunda-toyota-corolla',
+    path: '/limpieza-profunda-toyota-corolla',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MetodosYProcesoDeDetalladoRoute =
@@ -88,83 +109,62 @@ const MetodosYProcesoDeDetalladoRoute =
     path: '/metodos-y-proceso-de-detallado',
     getParentRoute: () => rootRouteImport,
   } as any)
-const McpRoute = McpRouteImport.update({
-  id: '/mcp',
-  path: '/mcp',
+const NosotrosRoute = NosotrosRouteImport.update({
+  id: '/nosotros',
+  path: '/nosotros',
   getParentRoute: () => rootRouteImport,
 } as any)
-const LimpiezaProfundaToyotaCorollaRoute =
-  LimpiezaProfundaToyotaCorollaRouteImport.update({
-    id: '/limpieza-profunda-toyota-corolla',
-    path: '/limpieza-profunda-toyota-corolla',
+const OptInRoute = OptInRouteImport.update({
+  id: '/opt-in',
+  path: '/opt-in',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacidadRoute = PrivacidadRouteImport.update({
+  id: '/privacidad',
+  path: '/privacidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProcesoLimpiezaInteriorRoute = ProcesoLimpiezaInteriorRouteImport.update({
+  id: '/proceso-limpieza-interior',
+  path: '/proceso-limpieza-interior',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResenasRoute = ResenasRouteImport.update({
+  id: '/resenas',
+  path: '/resenas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReservarConAngelRoute = ReservarConAngelRouteImport.update({
+  id: '/reservar-con-angel',
+  path: '/reservar-con-angel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReservarPolarizadoRoute = ReservarPolarizadoRouteImport.update({
+  id: '/reservar-polarizado',
+  path: '/reservar-polarizado',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReservarRecubrimientoCeramicoRoute =
+  ReservarRecubrimientoCeramicoRouteImport.update({
+    id: '/reservar-recubrimiento-ceramico',
+    path: '/reservar-recubrimiento-ceramico',
     getParentRoute: () => rootRouteImport,
   } as any)
-const LimpiezaProfundaHondaCivicRoute =
-  LimpiezaProfundaHondaCivicRouteImport.update({
-    id: '/limpieza-profunda-honda-civic',
-    path: '/limpieza-profunda-honda-civic',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const HerramientasYProductosRoute = HerramientasYProductosRouteImport.update({
-  id: '/herramientas-y-productos',
-  path: '/herramientas-y-productos',
+const ResultadosRoute = ResultadosRouteImport.update({
+  id: '/resultados',
+  path: '/resultados',
   getParentRoute: () => rootRouteImport,
 } as any)
-const GraciasGlanzRoute = GraciasGlanzRouteImport.update({
-  id: '/gracias-glanz',
-  path: '/gracias-glanz',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GraciasRoute = GraciasRouteImport.update({
-  id: '/gracias',
-  path: '/gracias',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaqLimpiezaMotorRoute = FaqLimpiezaMotorRouteImport.update({
-  id: '/faq-limpieza-motor',
-  path: '/faq-limpieza-motor',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaqLimpiezaInteriorRoute = FaqLimpiezaInteriorRouteImport.update({
-  id: '/faq-limpieza-interior',
-  path: '/faq-limpieza-interior',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactoRoute = ContactoRouteImport.update({
-  id: '/contacto',
-  path: '/contacto',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CancelacionRoute = CancelacionRouteImport.update({
-  id: '/cancelacion',
-  path: '/cancelacion',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AreasDeServicioRoute = AreasDeServicioRouteImport.update({
-  id: '/areas-de-servicio',
-  path: '/areas-de-servicio',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SlugRoute = SlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Char91DotwellKnownChar93OauthProtectedResourceRoute =
-  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const Char91DotmcpChar93ListToolsRoute =
   Char91DotmcpChar93ListToolsRouteImport.update({
     id: '/.mcp/list-tools',
     path: '/.mcp/list-tools',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
     getParentRoute: () => rootRouteImport,
   } as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
@@ -377,151 +377,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/resultados': {
-      id: '/resultados'
-      path: '/resultados'
-      fullPath: '/resultados'
-      preLoaderRoute: typeof ResultadosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reservar-recubrimiento-ceramico': {
-      id: '/reservar-recubrimiento-ceramico'
-      path: '/reservar-recubrimiento-ceramico'
-      fullPath: '/reservar-recubrimiento-ceramico'
-      preLoaderRoute: typeof ReservarRecubrimientoCeramicoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reservar-polarizado': {
-      id: '/reservar-polarizado'
-      path: '/reservar-polarizado'
-      fullPath: '/reservar-polarizado'
-      preLoaderRoute: typeof ReservarPolarizadoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reservar-con-angel': {
-      id: '/reservar-con-angel'
-      path: '/reservar-con-angel'
-      fullPath: '/reservar-con-angel'
-      preLoaderRoute: typeof ReservarConAngelRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/resenas': {
-      id: '/resenas'
-      path: '/resenas'
-      fullPath: '/resenas'
-      preLoaderRoute: typeof ResenasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/proceso-limpieza-interior': {
-      id: '/proceso-limpieza-interior'
-      path: '/proceso-limpieza-interior'
-      fullPath: '/proceso-limpieza-interior'
-      preLoaderRoute: typeof ProcesoLimpiezaInteriorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacidad': {
-      id: '/privacidad'
-      path: '/privacidad'
-      fullPath: '/privacidad'
-      preLoaderRoute: typeof PrivacidadRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/opt-in': {
-      id: '/opt-in'
-      path: '/opt-in'
-      fullPath: '/opt-in'
-      preLoaderRoute: typeof OptInRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/nosotros': {
-      id: '/nosotros'
-      path: '/nosotros'
-      fullPath: '/nosotros'
-      preLoaderRoute: typeof NosotrosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/metodos-y-proceso-de-detallado': {
-      id: '/metodos-y-proceso-de-detallado'
-      path: '/metodos-y-proceso-de-detallado'
-      fullPath: '/metodos-y-proceso-de-detallado'
-      preLoaderRoute: typeof MetodosYProcesoDeDetalladoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/mcp': {
-      id: '/mcp'
-      path: '/mcp'
-      fullPath: '/mcp'
-      preLoaderRoute: typeof McpRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/limpieza-profunda-toyota-corolla': {
-      id: '/limpieza-profunda-toyota-corolla'
-      path: '/limpieza-profunda-toyota-corolla'
-      fullPath: '/limpieza-profunda-toyota-corolla'
-      preLoaderRoute: typeof LimpiezaProfundaToyotaCorollaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/limpieza-profunda-honda-civic': {
-      id: '/limpieza-profunda-honda-civic'
-      path: '/limpieza-profunda-honda-civic'
-      fullPath: '/limpieza-profunda-honda-civic'
-      preLoaderRoute: typeof LimpiezaProfundaHondaCivicRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/herramientas-y-productos': {
-      id: '/herramientas-y-productos'
-      path: '/herramientas-y-productos'
-      fullPath: '/herramientas-y-productos'
-      preLoaderRoute: typeof HerramientasYProductosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gracias-glanz': {
-      id: '/gracias-glanz'
-      path: '/gracias-glanz'
-      fullPath: '/gracias-glanz'
-      preLoaderRoute: typeof GraciasGlanzRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gracias': {
-      id: '/gracias'
-      path: '/gracias'
-      fullPath: '/gracias'
-      preLoaderRoute: typeof GraciasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/faq-limpieza-motor': {
-      id: '/faq-limpieza-motor'
-      path: '/faq-limpieza-motor'
-      fullPath: '/faq-limpieza-motor'
-      preLoaderRoute: typeof FaqLimpiezaMotorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/faq-limpieza-interior': {
-      id: '/faq-limpieza-interior'
-      path: '/faq-limpieza-interior'
-      fullPath: '/faq-limpieza-interior'
-      preLoaderRoute: typeof FaqLimpiezaInteriorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contacto': {
-      id: '/contacto'
-      path: '/contacto'
-      fullPath: '/contacto'
-      preLoaderRoute: typeof ContactoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/cancelacion': {
-      id: '/cancelacion'
-      path: '/cancelacion'
-      fullPath: '/cancelacion'
-      preLoaderRoute: typeof CancelacionRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/areas-de-servicio': {
-      id: '/areas-de-servicio'
-      path: '/areas-de-servicio'
-      fullPath: '/areas-de-servicio'
-      preLoaderRoute: typeof AreasDeServicioRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/$slug': {
@@ -531,18 +391,151 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/areas-de-servicio': {
+      id: '/areas-de-servicio'
+      path: '/areas-de-servicio'
+      fullPath: '/areas-de-servicio'
+      preLoaderRoute: typeof AreasDeServicioRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+    '/cancelacion': {
+      id: '/cancelacion'
+      path: '/cancelacion'
+      fullPath: '/cancelacion'
+      preLoaderRoute: typeof CancelacionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq-limpieza-interior': {
+      id: '/faq-limpieza-interior'
+      path: '/faq-limpieza-interior'
+      fullPath: '/faq-limpieza-interior'
+      preLoaderRoute: typeof FaqLimpiezaInteriorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq-limpieza-motor': {
+      id: '/faq-limpieza-motor'
+      path: '/faq-limpieza-motor'
+      fullPath: '/faq-limpieza-motor'
+      preLoaderRoute: typeof FaqLimpiezaMotorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gracias': {
+      id: '/gracias'
+      path: '/gracias'
+      fullPath: '/gracias'
+      preLoaderRoute: typeof GraciasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gracias-glanz': {
+      id: '/gracias-glanz'
+      path: '/gracias-glanz'
+      fullPath: '/gracias-glanz'
+      preLoaderRoute: typeof GraciasGlanzRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/herramientas-y-productos': {
+      id: '/herramientas-y-productos'
+      path: '/herramientas-y-productos'
+      fullPath: '/herramientas-y-productos'
+      preLoaderRoute: typeof HerramientasYProductosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/limpieza-profunda-honda-civic': {
+      id: '/limpieza-profunda-honda-civic'
+      path: '/limpieza-profunda-honda-civic'
+      fullPath: '/limpieza-profunda-honda-civic'
+      preLoaderRoute: typeof LimpiezaProfundaHondaCivicRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/limpieza-profunda-toyota-corolla': {
+      id: '/limpieza-profunda-toyota-corolla'
+      path: '/limpieza-profunda-toyota-corolla'
+      fullPath: '/limpieza-profunda-toyota-corolla'
+      preLoaderRoute: typeof LimpiezaProfundaToyotaCorollaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/metodos-y-proceso-de-detallado': {
+      id: '/metodos-y-proceso-de-detallado'
+      path: '/metodos-y-proceso-de-detallado'
+      fullPath: '/metodos-y-proceso-de-detallado'
+      preLoaderRoute: typeof MetodosYProcesoDeDetalladoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nosotros': {
+      id: '/nosotros'
+      path: '/nosotros'
+      fullPath: '/nosotros'
+      preLoaderRoute: typeof NosotrosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/opt-in': {
+      id: '/opt-in'
+      path: '/opt-in'
+      fullPath: '/opt-in'
+      preLoaderRoute: typeof OptInRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacidad': {
+      id: '/privacidad'
+      path: '/privacidad'
+      fullPath: '/privacidad'
+      preLoaderRoute: typeof PrivacidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/proceso-limpieza-interior': {
+      id: '/proceso-limpieza-interior'
+      path: '/proceso-limpieza-interior'
+      fullPath: '/proceso-limpieza-interior'
+      preLoaderRoute: typeof ProcesoLimpiezaInteriorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resenas': {
+      id: '/resenas'
+      path: '/resenas'
+      fullPath: '/resenas'
+      preLoaderRoute: typeof ResenasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reservar-con-angel': {
+      id: '/reservar-con-angel'
+      path: '/reservar-con-angel'
+      fullPath: '/reservar-con-angel'
+      preLoaderRoute: typeof ReservarConAngelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reservar-polarizado': {
+      id: '/reservar-polarizado'
+      path: '/reservar-polarizado'
+      fullPath: '/reservar-polarizado'
+      preLoaderRoute: typeof ReservarPolarizadoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reservar-recubrimiento-ceramico': {
+      id: '/reservar-recubrimiento-ceramico'
+      path: '/reservar-recubrimiento-ceramico'
+      fullPath: '/reservar-recubrimiento-ceramico'
+      preLoaderRoute: typeof ReservarRecubrimientoCeramicoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resultados': {
+      id: '/resultados'
+      path: '/resultados'
+      fullPath: '/resultados'
+      preLoaderRoute: typeof ResultadosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/list-tools': {
@@ -550,6 +543,13 @@ declare module '@tanstack/react-router' {
       path: '/.mcp/list-tools'
       fullPath: '/.mcp/list-tools'
       preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/invoke-tool/$tool': {

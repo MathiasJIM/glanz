@@ -4,7 +4,7 @@ import { Phone, Menu, X, ChevronDown, Instagram, Facebook } from "lucide-react";
 import { SITE } from "@/data/site";
 import { SERVICES_BY_CATEGORY } from "@/data/services";
 import { CTA } from "./CTA";
-import glanzLogo from "@/assets/glanz-logo.png.asset.json";
+import glanzLogo from "@/assets/glanz-logo.png";
 
 const navLink =
   "block px-3 py-2 text-sm font-semibold uppercase tracking-wide text-text-main hover:text-brand-red transition-colors";
@@ -18,7 +18,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="container-glanz flex items-center justify-between h-28">
         <Link to="/" aria-label="Inicio" className="flex items-center -ml-4">
-          <img src={glanzLogo.url} alt="Glanz Detailing Studio" className="h-24 w-auto" />
+          <img src={glanzLogo} alt="Glanz Detailing Studio" className="h-24 w-auto" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">

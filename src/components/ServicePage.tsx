@@ -3,27 +3,27 @@ import { Hero, Section, SectionHeading, AltBlock } from "./sections";
 import { Check, X, Sparkles } from "lucide-react";
 import type { ServiceData } from "@/data/services";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import ceramicoHero from "@/assets/ceramico-hero.jpg.asset.json";
-import serviceAlt from "@/assets/service-alt-2.jpg.asset.json";
-import miataPpfHero from "@/assets/miata-ppf-hero.jpg.asset.json";
-import ppfResumen from "@/assets/ppf-resumen.jpg.asset.json";
-import mantenimientoCeramico from "@/assets/mantenimiento-ceramico.png.asset.json";
-import brilloLavadoMantenimiento from "@/assets/brillo-lavado-mantenimiento.jpg.asset.json";
-import interiorIcon from "@/assets/interior-icon.png.asset.json";
-import exteriorIcon from "@/assets/car-icon.png.asset.json";
+import ceramicoHero from "@/assets/ceramico-hero.jpg";
+import serviceAlt from "@/assets/service-alt-2.jpg";
+import miataPpfHero from "@/assets/miata-ppf-hero.jpg";
+import ppfResumen from "@/assets/ppf-resumen.jpg";
+import mantenimientoCeramico from "@/assets/mantenimiento-ceramico.png";
+import brilloLavadoMantenimiento from "@/assets/brillo-lavado-mantenimiento.jpg";
+import interiorIcon from "@/assets/interior-icon.png";
+import exteriorIcon from "@/assets/car-icon.png";
 
 const DEFAULT_HERO_IMG = "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=2000&q=80";
-const ALT_IMG = (serviceAlt as any).url || "";
+const ALT_IMG = serviceAlt;
 
 const HERO_OVERRIDES: Record<string, string> = {
-  "recubrimiento-ceramico": ceramicoHero.url,
-  "ppf": miataPpfHero.url,
-  "pulido-especializado": mantenimientoCeramico.url,
+  "recubrimiento-ceramico": ceramicoHero,
+  "ppf": miataPpfHero,
+  "pulido-especializado": mantenimientoCeramico,
 };
 
 const ALT_OVERRIDES: Record<string, string> = {
-  "ppf": ppfResumen.url,
-  "pulido-especializado": brilloLavadoMantenimiento.url,
+  "ppf": ppfResumen,
+  "pulido-especializado": brilloLavadoMantenimiento,
 };
 
 const pkgBorder: Record<string, string> = {
@@ -63,8 +63,8 @@ export function ServicePage({ service }: { service: ServiceData }) {
                     className="w-6 h-6 shrink-0"
                     style={{
                       backgroundColor: "#F76603",
-                      maskImage: `url(${exteriorIcon.url})`,
-                      WebkitMaskImage: `url(${exteriorIcon.url})`,
+                      maskImage: `url(${exteriorIcon})`,
+                      WebkitMaskImage: `url(${exteriorIcon})`,
                       maskSize: "contain",
                       WebkitMaskSize: "contain",
                       maskRepeat: "no-repeat",
@@ -105,8 +105,8 @@ export function ServicePage({ service }: { service: ServiceData }) {
                     className="w-6 h-6 shrink-0"
                     style={{
                       backgroundColor: "#F76603",
-                      maskImage: `url(${interiorIcon.url})`,
-                      WebkitMaskImage: `url(${interiorIcon.url})`,
+                      maskImage: `url(${interiorIcon})`,
+                      WebkitMaskImage: `url(${interiorIcon})`,
                       maskSize: "contain",
                       WebkitMaskSize: "contain",
                       maskRepeat: "no-repeat",

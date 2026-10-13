@@ -4,11 +4,11 @@ import { Hero, Section, SectionHeading, AltBlock } from "@/components/sections";
 import { CTA } from "@/components/CTA";
 import { SITE } from "@/data/site";
 import { Sparkles, Shield, Sun, Droplets, Droplet, Wrench } from "lucide-react";
-import heroSuv from "@/assets/hero-suv.jpg.asset.json";
-import ppfProteccion from "@/assets/ppf-proteccion.jpg.asset.json";
-import lexusCeramico from "@/assets/lexus-ceramico.jpg.asset.json";
-import polarizadoImg from "@/assets/polarizado.jpg.asset.json";
-import mantenimientoFoam from "@/assets/mantenimiento-foam.jpg.asset.json";
+import heroSuv from "@/assets/hero-suv.jpg";
+import ppfProteccion from "@/assets/ppf-proteccion.jpg";
+import lexusCeramico from "@/assets/lexus-ceramico.jpg";
+import polarizadoImg from "@/assets/polarizado.jpg";
+import mantenimientoFoam from "@/assets/mantenimiento-foam.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,7 +37,7 @@ function Home() {
       <Hero
         title="Expertos en Tratamientos Ceramicos y PPF en Costa Rica"
         subtitle={"\nLo cuidamos como si fuera nuestro."}
-        bg={heroSuv.url}
+        bg={heroSuv}
       >
         <CTA to="/contacto" variant="red">Pedir cotización</CTA>
         <CTA to="/areas-de-servicio" variant="blue">Ver servicios</CTA>
@@ -62,27 +62,27 @@ function Home() {
           <AltBlock
             title="Tratamientos Cerámicos"
             text="Capa protectora con brillo tipo espejo e hidrofobia que repele agua, suciedad y rayos UV."
-            image={lexusCeramico.url}
+            image={lexusCeramico}
             cta={<CTA to="/recubrimiento-ceramico" variant="orange">Más información</CTA>}
           />
           <AltBlock
             reverse
             title="PPF – Protección de Pintura"
             text="La máxima protección que existe para tu pintura: uretano autorreparable contra astillas, rayones e impactos."
-            image={ppfProteccion.url}
+            image={ppfProteccion}
             cta={<CTA to="/ppf" variant="orange">Más información</CTA>}
           />
           <AltBlock
             title="Polarizado"
             text="Películas cerámicas premium con garantía de por vida. Bloquea rayos UV, reduce el calor y suma privacidad."
-            image={polarizadoImg.url}
+            image={polarizadoImg}
             cta={<CTA to="/polarizado-de-ventanas" variant="orange">Más información</CTA>}
           />
           <AltBlock
             reverse
             title="Detallado de Mantenimiento (Lavado)"
             text="Lavado premium con productos de alta calidad para un acabado impecable."
-            image={mantenimientoFoam.url}
+            image={mantenimientoFoam}
             cta={<CTA to="/pulido-especializado" variant="orange">Más información</CTA>}
           />
           <AltBlock
